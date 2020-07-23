@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float Range = 100f;
     [SerializeField] float Damage = 25f;
     [SerializeField] ParticleSystem MuzzleFlashVFX;
+    [SerializeField] GameObject HitVFX;
 
     // Update is called once per frame
     void Update()
@@ -35,6 +36,7 @@ public class Weapon : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, Range))
         {
+            CreateHitFx(hit);
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
             if (target == null) { return; } // if ray hit something other than enemy , then we return
             target.TakeDamage(Damage);
@@ -44,5 +46,11 @@ public class Weapon : MonoBehaviour
         {
             return;
         }
+    }
+
+    private void CreateHitFx(RaycastHit hit)
+    {
+        GameObject HitImpact = Instantiate(HitVFX, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(HitImpact, 0.1f);
     }
 }
