@@ -150,6 +150,8 @@ MonoBehaviour:
   MuzzleFlashVFX: {fileID: 8159557491774997137}
   HitVFX: {fileID: 7668750106039580502, guid: 41f6c5cba4e2c4f41a794bca6b34c083, type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 2
+  timeBetweenShoot: 0.5
 --- !u!1001 &4833759840731681741
 PrefabInstance:
   m_ObjectHideFlags: 0

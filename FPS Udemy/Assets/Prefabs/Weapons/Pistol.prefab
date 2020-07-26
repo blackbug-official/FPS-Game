@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 417070}
   - component: {fileID: 9560878}
+  - component: {fileID: 9050893051210501730}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -54,6 +55,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9050893051210501730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52669fc10a42d764185153fedfcaca2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  Range: 30
+  Damage: 25
+  MuzzleFlashVFX: {fileID: 479898145789772519}
+  HitVFX: {fileID: 7668750106039580502, guid: 41f6c5cba4e2c4f41a794bca6b34c083, type: 3}
+  ammoSlot: {fileID: 0}
+  ammoType: 1
+  timeBetweenShoot: 0.2
 --- !u!1 &160878
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +384,12 @@ PrefabInstance:
 --- !u!4 &1944814412341765544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813,
+    type: 3}
+  m_PrefabInstance: {fileID: 3783186871821472699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &479898145789772519 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
     type: 3}
   m_PrefabInstance: {fileID: 3783186871821472699}
   m_PrefabAsset: {fileID: 0}
