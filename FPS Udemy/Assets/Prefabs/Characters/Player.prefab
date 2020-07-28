@@ -561,42 +561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd4fc3d4d7c0604aa71ea990386f947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &672406947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7024967558393979845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9976b44d4c26b74c8bf190d4c4df91c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 5371439047887746932}
-  fpsController: {fileID: 7255386700981199940}
-  zoomedOutFOV: 60
-  zoomedInFOV: 40
-  zoomInMouseSensitivity: 2
-  zoomOutMouseSensitivity: 0.5
---- !u!114 &4328103207218558705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8504580550598679236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9976b44d4c26b74c8bf190d4c4df91c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 5371439047887746932}
-  fpsController: {fileID: 7255386700981199940}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomInMouseSensitivity: 2
-  zoomOutMouseSensitivity: 0.5
 --- !u!1001 &5024411078450722909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -817,6 +781,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6338223293190082197, guid: 841f0ca7a430c324d92c5583a9df3793,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 5371439047887746932}
+    - target: {fileID: 6338223293190082197, guid: 841f0ca7a430c324d92c5583a9df3793,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 7255386700981199940}
     - target: {fileID: 7902974473422337410, guid: 841f0ca7a430c324d92c5583a9df3793,
         type: 3}
       propertyPath: FPCamera
@@ -844,12 +818,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
---- !u!1 &8504580550598679236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4363277380951532803, guid: 841f0ca7a430c324d92c5583a9df3793,
-    type: 3}
-  m_PrefabInstance: {fileID: 5371439046683639751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8504580550598931972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4363277380951247299, guid: 841f0ca7a430c324d92c5583a9df3793,
@@ -915,6 +883,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2299364402216795317, guid: 38075ff1c3cff91428ade499a59bdc97,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 5371439047887746932}
+    - target: {fileID: 2299364402216795317, guid: 38075ff1c3cff91428ade499a59bdc97,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 7255386700981199940}
+    - target: {fileID: 2299364402216795317, guid: 38075ff1c3cff91428ade499a59bdc97,
+        type: 3}
+      propertyPath: zoomedInFOV
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 9050893051210501730, guid: 38075ff1c3cff91428ade499a59bdc97,
         type: 3}
       propertyPath: FPCamera
@@ -927,12 +910,6 @@ PrefabInstance:
       objectReference: {fileID: 7414219344454323299}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38075ff1c3cff91428ade499a59bdc97, type: 3}
---- !u!1 &7024967558393979845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 117070, guid: 38075ff1c3cff91428ade499a59bdc97,
-    type: 3}
-  m_PrefabInstance: {fileID: 7024967558393932427}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7024967558393558949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 417070, guid: 38075ff1c3cff91428ade499a59bdc97,
